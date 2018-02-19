@@ -22,9 +22,10 @@ namespace PasswordManager
     /// </summary>
     public partial class MainWindow : Window
     {
-        private String path;
+        public String path;
         SHA256CryptoServiceProvider provider = new SHA256CryptoServiceProvider();
-        String sha;
+        public String usha;
+        public String psha;
 
         public MainWindow()
         {
@@ -74,17 +75,16 @@ namespace PasswordManager
 
         private void btLogin_Click(object sender, RoutedEventArgs e)
         {
-            sha = SHA256Encrypt(tbuser.Text);
-            pathFileSHA(sha);
+            usha = SHA256Encrypt(tbuser.Text);
+            pathFileSHA(usha);
             if (File.Exists(path))
             {
-                string line = File.ReadLines(path).Skip(1).Take(1).First();
-                MessageBox.Show(line);
-                if (SHA256Encrypt(tbpw.Password).Equals(line))
+                psha = File.ReadLines(path).Skip(1).Take(1).First().ToString();
+                if (SHA256Encrypt(tbpw.Password).Equals(psha))
                 {
-                    this.Close();
                     Usuario u = new Usuario();
                     u.Show();
+                    this.Hide();
                 }
                 else
                     MessageBox.Show("Contraseña incorrecta");

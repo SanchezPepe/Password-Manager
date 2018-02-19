@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PasswordManager"
         mc:Ignorable="d"
-        Title="Usuario" Height="300" Width="300">
+        Title="Usuario" Height="318.667" Width="352">
     <Grid>
-        
+        <GroupBox Header="Añadir nueva contraseña&#xD;&#xA;" Height="219" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="313">
+            <Grid Margin="1,0,-2.2,-27.8" Height="167" VerticalAlignment="Top">
+                <Label Content="Usuario" HorizontalAlignment="Left" Margin="10,10,0,0" Width="76" Height="25" VerticalAlignment="Top"/>
+                <PasswordBox x:Name="pw1" Margin="91,43,0,0" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="191"/>
+                <Label Content="Contraseña" HorizontalAlignment="Left" Margin="10,43,0,0" Width="76" Height="25" VerticalAlignment="Top"/>
+                <PasswordBox x:Name="pw2" Margin="91,83,0,0" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="191"/>
+                <Label Content="Confirmar&#xA;Contraseña" HorizontalAlignment="Left" Margin="10,73,0,0" Width="76" Height="42" VerticalAlignment="Top"/>
+                <TextBox x:Name="tbUsuario" HorizontalAlignment="Left" Height="25" Margin="91,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191"/>
+                <Button x:Name="btGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="207,116,0,0" Width="75" Height="24" VerticalAlignment="Top" Click="btGuardar_Click"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="btConsulta" Content="Consultar contreseñas" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Width="150" Height="24" Click="btConsulta_Click"/>
+        <Button x:Name="btLogout" Content="Logout" HorizontalAlignment="Left" Margin="242,240,0,0" VerticalAlignment="Top" Width="81" Height="24" Click="btLogout_Click"/>
     </Grid>
 </Window>
