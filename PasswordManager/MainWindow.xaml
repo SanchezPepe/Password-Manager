@@ -29,7 +29,7 @@
                 <TextBox Margin="91,10,0,0" TextWrapping="Wrap" Text="&#xA;" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="191"/>
                 <PasswordBox Margin="91,43,0,0" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="191"/>
                 <Label Content="Contraseña" HorizontalAlignment="Left" Margin="10,43,0,0" Width="76" Height="25" VerticalAlignment="Top"/>
-                <Button x:Name="btRegistro" Content="Registrar" HorizontalAlignment="Left" Margin="207,116,0,0" Width="75" Height="24" VerticalAlignment="Top"/>
+                <Button x:Name="btRegistro" Content="Registrar" HorizontalAlignment="Left" Margin="207,116,0,0" Width="75" Height="24" VerticalAlignment="Top" Click="btRegistro_Click"/>
                 <PasswordBox Margin="91,83,0,0" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="191"/>
                 <Label Content="Confirmar&#xD;&#xA;Contraseña" HorizontalAlignment="Left" Margin="10,73,0,0" Width="76" Height="42" VerticalAlignment="Top"/>
             </Grid>

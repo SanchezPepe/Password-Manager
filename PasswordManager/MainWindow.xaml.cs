@@ -25,5 +25,9 @@ namespace PasswordManager
             InitializeComponent();
         }
 
+        private void btRegistro_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
