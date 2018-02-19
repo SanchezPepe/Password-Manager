@@ -5,8 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PasswordManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="Password Manager" Height="393.94" Width="346.6">
+    <Grid Margin="0,0,0.4,0" Height="368" VerticalAlignment="Top">
+        <Menu HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="518">
+            <MenuItem Header="MenuItem" Height="26" Width="70">
+                <MenuItem Header="MenuItem" HorizontalAlignment="Left" Height="54" Width="70"/>
+            </MenuItem>
+            <MenuItem Header="MenuItem" Height="26" Width="72"/>
+            <MenuItem Header="MenuItem" Height="26" Width="100"/>
+        </Menu>
+        <GroupBox Header="Login" Height="137" Margin="10,31,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="313">
+            <Grid Margin="1,10,-2.4,-1.8" Height="119" VerticalAlignment="Top">
+                <Label Content="Usuario" HorizontalAlignment="Left" Margin="10,10,0,0" Width="76" Height="25" VerticalAlignment="Top"/>
+                <TextBox Margin="91,10,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="191"/>
+                <PasswordBox Margin="91,43,0,0" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="191"/>
+                <Label Content="Contraseña" HorizontalAlignment="Left" Margin="10,43,0,0" Width="76" Height="25" VerticalAlignment="Top"/>
+                <Button x:Name="btLogin" Content="Login" HorizontalAlignment="Left" Margin="207,76,0,0" Width="75" Height="24" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Registro" Height="177" Margin="10,173,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="313">
+            <Grid Margin="1,10,-2.2,0" Height="144" VerticalAlignment="Top">
+                <Label Content="Usuario" HorizontalAlignment="Left" Margin="10,10,0,0" Width="76" Height="25" VerticalAlignment="Top"/>
+                <TextBox Margin="91,10,0,0" TextWrapping="Wrap" Text="&#xA;" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="191"/>
+                <PasswordBox Margin="91,43,0,0" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="191"/>
+                <Label Content="Contraseña" HorizontalAlignment="Left" Margin="10,43,0,0" Width="76" Height="25" VerticalAlignment="Top"/>
+                <Button x:Name="btRegistro" Content="Registrar" HorizontalAlignment="Left" Margin="207,116,0,0" Width="75" Height="24" VerticalAlignment="Top"/>
+                <PasswordBox Margin="91,83,0,0" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="191"/>
+                <Label Content="Confirmar&#xD;&#xA;Contraseña" HorizontalAlignment="Left" Margin="10,73,0,0" Width="76" Height="42" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+
     </Grid>
 </Window>
